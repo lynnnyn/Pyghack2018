@@ -1,0 +1,556 @@
+<body>
+<h3></>Division of Management Information
+<a href="https://secure.dmi.illinois.edu/course">Course Information System</a>
+</h3>
+<h3>Enrollments and IUs by Course, Subject, and Offering Department<br>
+2018-19 <br>
+&nbsp;</h3>
+<font color=red>2018-19 courses are still in progress.  Final figures will be available by the end of September.</font><br>
+<h2>1. By Term and Course</h2>
+<table border=1 cellpadding=4 bgcolor="#EFFFFF">
+<tr align=center VALIGN=BOTTOM>
+<th rowspan=2>Term</th>
+<th rowspan=2>College</th>
+<th rowspan=2>Dept</th>
+<th rowspan=2>Subject</th>
+<th rowspan=2>Course</th>
+<th colspan=6>Course Enrollment by student level</th>
+<th colspan=6>IUs by student level</th>
+
+</tr>
+<tr align=center valign=bottom>
+<th>Fr/<br>Soph</th>
+<th>Junior/<br>Senior</th>
+<th>Profnl</th>
+<th>Grad 1</th>
+<th>Grad 2</th>
+<th>Total</th>
+<th>Fr/<br>Soph</th>
+<th>Junior/<br>Senior</th>
+<th>Profnl</th>
+<th>Grad 1</th>
+<th>Grad 2</th>
+<th>Total</th></tr>
+<tr align=right VALIGN=BOTTOM>                                  
+<td align=left>   FA18</td>                                          
+<td align=left>LT</td>                                         
+<td align=left>1-869</td>                                         
+<td align=left>BSE </td>                                         
+<td align=left>631</td>                                         
+              
+<td>32.0</td>                                             
+<td>0.0</td>                                       
+<td>0.0</td>                                                  
+<td>0.0</td>                                                  
+<td>0.0</td>                                                  
+<td>32.0</td>                                                   
+<td>128.0</td>                                             
+<td>0.0</td>                                       
+<td>0.0</td>                                                  
+<td>0.0</td>                                                  
+<td>0.0</td>                                                  
+<td>128.0</td>
+                                  
+</tr>                                              
+<tr align=right VALIGN=BOTTOM>                                  
+<td align=left>   FA18</td>                                          
+<td align=left>LT</td>                                         
+<td align=left>1-869</td>                                         
+<td align=left>BSE </td>                                         
+<td align=left>632</td>                                         
+              
+<td>32.0</td>                                             
+<td>0.0</td>                                       
+<td>0.0</td>                                                  
+<td>0.0</td>                                                  
+<td>0.0</td>                                                  
+<td>32.0</td>                                                   
+<td>96.0</td>                                             
+<td>0.0</td>                                       
+<td>0.0</td>                                                  
+<td>0.0</td>                                                  
+<td>0.0</td>                                                  
+<td>96.0</td>
+                                  
+</tr>                                              
+<tr align=right VALIGN=BOTTOM>                                  
+<td align=left>   FA18</td>                                          
+<td align=left>LT</td>                                         
+<td align=left>1-869</td>                                         
+<td align=left>BSE </td>                                         
+<td align=left>633</td>                                         
+              
+<td>32.0</td>                                             
+<td>0.0</td>                                       
+<td>0.0</td>                                                  
+<td>0.0</td>                                                  
+<td>0.0</td>                                                  
+<td>32.0</td>                                                   
+<td>96.0</td>                                             
+<td>0.0</td>                                       
+<td>0.0</td>                                                  
+<td>0.0</td>                                                  
+<td>0.0</td>                                                  
+<td>96.0</td>
+                                  
+</tr>                                              
+<tr align=right VALIGN=BOTTOM>                                  
+<td align=left>   FA18</td>                                          
+<td align=left>LT</td>                                         
+<td align=left>1-869</td>                                         
+<td align=left>CLE </td>                                         
+<td align=left>611</td>                                         
+              
+<td>32.0</td>                                             
+<td>0.0</td>                                       
+<td>0.0</td>                                                  
+<td>0.0</td>                                                  
+<td>0.0</td>                                                  
+<td>32.0</td>                                                   
+<td>192.0</td>                                             
+<td>0.0</td>                                       
+<td>0.0</td>                                                  
+<td>0.0</td>                                                  
+<td>0.0</td>                                                  
+<td>192.0</td>
+                                  
+</tr>                                              
+<tr align=right VALIGN=BOTTOM>                                  
+<td align=left>   FA18</td>                                          
+<td align=left>LT</td>                                         
+<td align=left>1-869</td>                                         
+<td align=left>CLE </td>                                         
+<td align=left>621</td>                                         
+              
+<td>32.0</td>                                             
+<td>0.0</td>                                       
+<td>0.0</td>                                                  
+<td>0.0</td>                                                  
+<td>0.0</td>                                                  
+<td>32.0</td>                                                   
+<td>192.0</td>                                             
+<td>0.0</td>                                       
+<td>0.0</td>                                                  
+<td>0.0</td>                                                  
+<td>0.0</td>                                                  
+<td>192.0</td>
+                                  
+</tr>                                              
+</table><br/>
+<h2>2. By Term, Subject, and Level</h2>
+<table border=1 cellpadding=4 bgcolor="#C3F7DB">
+<tr align=center VALIGN=BOTTOM>
+<th rowspan=2>Term</th>
+<th rowspan=2>College</th>
+<th rowspan=2>Dept</th>
+<th rowspan=2>Subject</th>
+<th rowspan=2>Level</th>
+<th colspan=6>Course Enrollment by student level</th>
+<th colspan=6>IUs by student level</th>
+
+</tr>
+<tr align=center valign=bottom>
+<th>Fr/<br>Soph</th>
+<th>Junior/<br>Senior</th>
+<th>Profnl</th>
+<th>Grad 1</th>
+<th>Grad 2</th>
+<th>Total</th>
+<th>Fr/<br>Soph</th>
+<th>Junior/<br>Senior</th>
+<th>Profnl</th>
+<th>Grad 1</th>
+<th>Grad 2</th>
+<th>Total</th></tr>
+<tr align=right VALIGN=BOTTOM>                                  
+<td align=left>   FA18</td>                                          
+<td align=left>LT</td>                                         
+<td align=left>1-869</td>                                         
+<td align=left>BSE </td>                                         
+<td align=left>600</td>                                         
+              
+<td>96.0</td>                                             
+<td>0.0</td>                                       
+<td>0.0</td>                                                  
+<td>0.0</td>                                                  
+<td>0.0</td>                                                  
+<td>96.0</td>                                                   
+<td>320.0</td>                                             
+<td>0.0</td>                                       
+<td>0.0</td>                                                  
+<td>0.0</td>                                                  
+<td>0.0</td>                                                  
+<td>320.0</td>
+                                  
+</tr>                                              
+<tr align=right VALIGN=BOTTOM>                                  
+<td align=left>   FA18</td>                                          
+<td align=left>LT</td>                                         
+<td align=left>1-869</td>                                         
+<td align=left>CLE </td>                                         
+<td align=left>600</td>                                         
+              
+<td>64.0</td>                                             
+<td>0.0</td>                                       
+<td>0.0</td>                                                  
+<td>0.0</td>                                                  
+<td>0.0</td>                                                  
+<td>64.0</td>                                                   
+<td>384.0</td>                                             
+<td>0.0</td>                                       
+<td>0.0</td>                                                  
+<td>0.0</td>                                                  
+<td>0.0</td>                                                  
+<td>384.0</td>
+                                  
+</tr>                                              
+</table><br/>
+<h2>3. By Term and Subject</h2>
+<table border=1 cellpadding=4 bgcolor="#F9FA9E">
+<tr align=center VALIGN=BOTTOM>
+<th rowspan=2>Term</th>
+<th rowspan=2>College</th>
+<th rowspan=2>Dept</th>
+<th rowspan=2>Subject</th>
+<th rowspan=2>Course</th>
+<th colspan=6>Course Enrollment by student level</th>
+<th colspan=6>IUs by student level</th>
+
+</tr>
+<tr align=center valign=bottom>
+<th>Fr/<br>Soph</th>
+<th>Junior/<br>Senior</th>
+<th>Profnl</th>
+<th>Grad 1</th>
+<th>Grad 2</th>
+<th>Total</th>
+<th>Fr/<br>Soph</th>
+<th>Junior/<br>Senior</th>
+<th>Profnl</th>
+<th>Grad 1</th>
+<th>Grad 2</th>
+<th>Total</th></tr>
+<tr align=right VALIGN=BOTTOM>                                  
+<td align=left>   FA18</td>                                          
+<td align=left>LT</td>                                         
+<td align=left>1-869</td>                                         
+<td align=left>BSE </td>                                         
+<td align=left>All</td>                                         
+              
+<td>96.0</td>                                             
+<td>0.0</td>                                       
+<td>0.0</td>                                                  
+<td>0.0</td>                                                  
+<td>0.0</td>                                                  
+<td>96.0</td>                                                   
+<td>320.0</td>                                             
+<td>0.0</td>                                       
+<td>0.0</td>                                                  
+<td>0.0</td>                                                  
+<td>0.0</td>                                                  
+<td>320.0</td>
+                                  
+</tr>                                              
+<tr align=right VALIGN=BOTTOM>                                  
+<td align=left>   FA18</td>                                          
+<td align=left>LT</td>                                         
+<td align=left>1-869</td>                                         
+<td align=left>CLE </td>                                         
+<td align=left>All</td>                                         
+              
+<td>64.0</td>                                             
+<td>0.0</td>                                       
+<td>0.0</td>                                                  
+<td>0.0</td>                                                  
+<td>0.0</td>                                                  
+<td>64.0</td>                                                   
+<td>384.0</td>                                             
+<td>0.0</td>                                       
+<td>0.0</td>                                                  
+<td>0.0</td>                                                  
+<td>0.0</td>                                                  
+<td>384.0</td>
+                                  
+</tr>                                              
+</table><br/>
+<h2>4. By Subject (All terms)</h2>
+<table border=1 cellpadding=4 bgcolor="#F5E3AD">
+<tr align=center VALIGN=BOTTOM>
+<th rowspan=2>Term</th>
+<th rowspan=2>College</th>
+<th rowspan=2>Dept</th>
+<th rowspan=2>Subject</th>
+<th rowspan=2>Course</th>
+<th colspan=6>Course Enrollment by student level</th>
+<th colspan=6>IUs by student level</th>
+
+</tr>
+<tr align=center valign=bottom>
+<th>Fr/<br>Soph</th>
+<th>Junior/<br>Senior</th>
+<th>Profnl</th>
+<th>Grad 1</th>
+<th>Grad 2</th>
+<th>Total</th>
+<th>Fr/<br>Soph</th>
+<th>Junior/<br>Senior</th>
+<th>Profnl</th>
+<th>Grad 1</th>
+<th>Grad 2</th>
+<th>Total</th></tr>
+<tr align=right VALIGN=BOTTOM>                                  
+<td align=left>All</td>                                          
+<td align=left>LT</td>                                         
+<td align=left>1-869</td>                                         
+<td align=left>BSE </td>                                         
+<td align=left>All</td>                                         
+              
+<td>96.0</td>                                             
+<td>0.0</td>                                       
+<td>0.0</td>                                                  
+<td>0.0</td>                                                  
+<td>0.0</td>                                                  
+<td>96.0</td>                                                   
+<td>320.0</td>                                             
+<td>0.0</td>                                       
+<td>0.0</td>                                                  
+<td>0.0</td>                                                  
+<td>0.0</td>                                                  
+<td>320.0</td>
+                                  
+</tr>                                              
+<tr align=right VALIGN=BOTTOM>                                  
+<td align=left>All</td>                                          
+<td align=left>LT</td>                                         
+<td align=left>1-869</td>                                         
+<td align=left>CLE </td>                                         
+<td align=left>All</td>                                         
+              
+<td>64.0</td>                                             
+<td>0.0</td>                                       
+<td>0.0</td>                                                  
+<td>0.0</td>                                                  
+<td>0.0</td>                                                  
+<td>64.0</td>                                                   
+<td>384.0</td>                                             
+<td>0.0</td>                                       
+<td>0.0</td>                                                  
+<td>0.0</td>                                                  
+<td>0.0</td>                                                  
+<td>384.0</td>
+                                  
+</tr>                                              
+</table><br/>
+<h2>5. By Term, Department, and Level</h2>
+<table border=1 cellpadding=4 bgcolor="#F5CBAD">
+<tr align=center VALIGN=BOTTOM>
+<th rowspan=2>Term</th>
+<th rowspan=2>College</th>
+<th rowspan=2>Dept</th>
+<th rowspan=2>Subject</th>
+<th rowspan=2>Level</th>
+<th colspan=6>Course Enrollment by student level</th>
+<th colspan=6>IUs by student level</th>
+
+</tr>
+<tr align=center valign=bottom>
+<th>Fr/<br>Soph</th>
+<th>Junior/<br>Senior</th>
+<th>Profnl</th>
+<th>Grad 1</th>
+<th>Grad 2</th>
+<th>Total</th>
+<th>Fr/<br>Soph</th>
+<th>Junior/<br>Senior</th>
+<th>Profnl</th>
+<th>Grad 1</th>
+<th>Grad 2</th>
+<th>Total</th></tr>
+<tr align=right VALIGN=BOTTOM>                                  
+<td align=left>   FA18</td>                                          
+<td align=left>LT</td>                                         
+<td align=left>1-869</td>                                         
+<td align=left>All</td>                                         
+<td align=left>600</td>                                         
+              
+<td>160.0</td>                                             
+<td>0.0</td>                                       
+<td>0.0</td>                                                  
+<td>0.0</td>                                                  
+<td>0.0</td>                                                  
+<td>160.0</td>                                                   
+<td>704.0</td>                                             
+<td>0.0</td>                                       
+<td>0.0</td>                                                  
+<td>0.0</td>                                                  
+<td>0.0</td>                                                  
+<td>704.0</td>
+                                  
+</tr>                                              
+</table><br/>
+<h2>6. By Term and Department</h2>
+<table border=1 cellpadding=4 bgcolor="#F5ADD2">
+<tr align=center VALIGN=BOTTOM>
+<th rowspan=2>Term</th>
+<th rowspan=2>College</th>
+<th rowspan=2>Dept</th>
+<th rowspan=2>Subject</th>
+<th rowspan=2>Level</th>
+<th colspan=6>Course Enrollment by student level</th>
+<th colspan=6>IUs by student level</th>
+
+</tr>
+<tr align=center valign=bottom>
+<th>Fr/<br>Soph</th>
+<th>Junior/<br>Senior</th>
+<th>Profnl</th>
+<th>Grad 1</th>
+<th>Grad 2</th>
+<th>Total</th>
+<th>Fr/<br>Soph</th>
+<th>Junior/<br>Senior</th>
+<th>Profnl</th>
+<th>Grad 1</th>
+<th>Grad 2</th>
+<th>Total</th></tr>
+<tr align=right VALIGN=BOTTOM>                                  
+<td align=left>   FA18</td>                                          
+<td align=left>LT</td>                                         
+<td align=left>1-869</td>                                         
+<td align=left>All</td>                                         
+<td align=left>All</td>                                         
+              
+<td>160.0</td>                                             
+<td>0.0</td>                                       
+<td>0.0</td>                                                  
+<td>0.0</td>                                                  
+<td>0.0</td>                                                  
+<td>160.0</td>                                                   
+<td>704.0</td>                                             
+<td>0.0</td>                                       
+<td>0.0</td>                                                  
+<td>0.0</td>                                                  
+<td>0.0</td>                                                  
+<td>704.0</td>
+                                  
+</tr>                                              
+</table><br/>
+<h2>7. By Term, College, and Level</h2>
+<table border=1 cellpadding=4 bgcolor="#D2ADF5">
+<tr align=center VALIGN=BOTTOM>
+<th rowspan=2>Term</th>
+<th rowspan=2>College</th>
+<th rowspan=2>Dept</th>
+<th rowspan=2>Subject</th>
+<th rowspan=2>Level</th>
+<th colspan=6>Course Enrollment by student level</th>
+<th colspan=6>IUs by student level</th>
+
+</tr>
+<tr align=center valign=bottom>
+<th>Fr/<br>Soph</th>
+<th>Junior/<br>Senior</th>
+<th>Profnl</th>
+<th>Grad 1</th>
+<th>Grad 2</th>
+<th>Total</th>
+<th>Fr/<br>Soph</th>
+<th>Junior/<br>Senior</th>
+<th>Profnl</th>
+<th>Grad 1</th>
+<th>Grad 2</th>
+<th>Total</th></tr>
+<tr align=right VALIGN=BOTTOM>                                  
+<td align=left>   FA18</td>                                          
+<td align=left>LT</td>                                         
+<td align=left>All</td>                                         
+<td align=left>All</td>                                         
+<td align=left>600</td>                                         
+              
+<td>160.0</td>                                             
+<td>0.0</td>                                       
+<td>0.0</td>                                                  
+<td>0.0</td>                                                  
+<td>0.0</td>                                                  
+<td>160.0</td>                                                   
+<td>704.0</td>                                             
+<td>0.0</td>                                       
+<td>0.0</td>                                                  
+<td>0.0</td>                                                  
+<td>0.0</td>                                                  
+<td>704.0</td>
+                                  
+</tr>                                              
+</table><br/>         
+<h2>8. By Term and College</h2>
+<table border=1 cellpadding=4 bgcolor="#ADC5F5">
+<tr align=center VALIGN=BOTTOM>
+<th rowspan=2>Term</th>
+<th rowspan=2>College</th>
+<th rowspan=2>Dept</th>
+<th rowspan=2>Subject</th>
+<th rowspan=2>Level</th>
+<th colspan=6>Course Enrollment by student level</th>
+<th colspan=6>IUs by student level</th>
+
+</tr>
+<tr align=center valign=bottom>
+<th>Fr/<br>Soph</th>
+<th>Junior/<br>Senior</th>
+<th>Profnl</th>
+<th>Grad 1</th>
+<th>Grad 2</th>
+<th>Total</th>
+<th>Fr/<br>Soph</th>
+<th>Junior/<br>Senior</th>
+<th>Profnl</th>
+<th>Grad 1</th>
+<th>Grad 2</th>
+<th>Total</th></tr>
+<tr align=right VALIGN=BOTTOM>                                  
+<td align=left>   FA18</td>                                          
+<td align=left>LT</td>                                         
+<td align=left>All</td>                                         
+<td align=left>All</td>                                         
+<td align=left>All</td>                                         
+              
+<td>160.0</td>                                             
+<td>0.0</td>                                       
+<td>0.0</td>                                                  
+<td>0.0</td>                                                  
+<td>0.0</td>                                                  
+<td>160.0</td>                                                   
+<td>704.0</td>                                             
+<td>0.0</td>                                       
+<td>0.0</td>                                                  
+<td>0.0</td>                                                  
+<td>0.0</td>                                                  
+<td>704.0</td>
+                                  
+</tr>                                              
+</table><br/>         
+ 
+                                                            
+</div>                                                        
+
+                                                              
+<a href="https://illinois.edu/fb/sec/6606213"><img src="img/suggestion_box_dmi.png" style="padding-left:5px;padding-top:5px;padding-bottom:10px;"></a>
+</div>
+<div id="bottombar" class="noprint">
+<a href="http://www.dmi.illinois.edu/">Division of Management Information</a><br> 
+100 Swanlund Administration Building 
+<br>601 East John Street, MC304 
+<br>Champaign, IL 61820
+<br>phone: (217) 333-3551 | fax: (217) 244-2098 | email: <a href="mailto:dmi@illinois.edu" mailto="mailto:">dmi@illinois.edu</a>
+<br>
+<br>&copy; Copyright 2018 University of Illinois Board of Trustees</p>
+       </span>
+	</div>
+</div>
+</body>
+
+</html>
+
+     
+                                                                                                                   
+                                                                                                      
