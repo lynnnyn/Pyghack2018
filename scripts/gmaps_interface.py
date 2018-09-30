@@ -99,14 +99,12 @@ def calculate_optimal_gas_station(origin, destination, optimization_target, fuel
 			if optimization_target.strip().lower() == "cost":
 				station_ranking.put((calculate_gas_station_score(station_route, price, direct_distance), price, station_address))
 			elif optimization_target.strip().lower() == "speed": 
-				print("!!")
 				station_ranking.put((get_total_route_distance(station_route), calculate_gas_station_score(station_route, price, direct_distance), price, station_address))
 
 	if optimization_target.strip().lower() == "cost":
 		return station_ranking.get()[2]
 	elif optimization_target.strip().lower() == "speed":
 		nearest = list() 
-		print("??")
 		for i in range(5): 
 			nearest.append(station_ranking.get())
 		return min(nearest, key = lambda x: x[1])[3]

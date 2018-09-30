@@ -52,7 +52,7 @@ class get_from_gasbuddy():
         #print(dt)
         price = dt.loc[dt.adds == address, 'price']
         #print(price)
-        return set(price).pop()
+        return set(price)
 
 
 
