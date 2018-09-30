@@ -1,26 +1,5 @@
 # Pyghack2018
-Code for Pyghack 2018 Project to tackle the Urbana Fleet Fuel Management Problem
+Our project tackles the Urbana Fleet Fuel Management problem, which tries to find trends in gas station prices and vehicle fueling behaviors. In addition to answering these questions, we built a dynamic route recommendation system. The system calculates the route between a start point and a destination, looks at all of the gas stations that are reachable along the route, and then recommends a gas station to go to. This recommendation can be optimized for cost (i.e., it will recommend the gas station with the cheapest prices while taking into account the fuel lost by making a detour to the station) or for time (i.e., it will recommend the gas station that is fastest and cheapest to get to). 
 
-# Urbana Fleet Fuel Management
-
-## Organization Name
-Urbana Public Works
- 
-## Local Sponsor
-Scott Tess, Environmental Sustainability Manager for City of Urbana
-
-## Overview
-The City of Urbana Fleet Division manages credit cards used exclusively for fueling City-owned vehicles.  The credit card transactions collect data regarding the fuel station, amount of fuel, vehicle ID, vehicle mileage, etc.
-
-## Problem Statement
-Are there trends that suggest that certain gas stations are more or less expensive?  Are there trends about fueling behaviors?
-
-## Evaluation criteria
-- Comprehensiveness of data profiling and the creation of a generally applicable or reusable model
-
-## Data Details
-
-| Dataset | Description | Link |
-| --------- | ----------- | ---- |
-| Fuel card data | List of credit card transactions with price and location for City of Urbana fleet | fuel_card_export.csv |
-| Gas Buddy charts | Local gas price data | https://www.gasbuddy.com/Charts |
+We visualized some of the insights we gained from the dataset on Tableau: 
+https://public.tableau.com/shared/Y477CXTK5?:display_count=yes
