@@ -43,9 +43,12 @@ class get_from_gasbuddy():
             adds_html = soup.find_all('div', class_='styles__address___8IK98')
             adds.extend(['{}, {}'.format(add.contents[0], add.contents[2]) for add in adds_html])
             prices_html = soup.find_all('span', class_='styles__price___3DxO5')
-            print(price.text[:])
-            prices.extend([float(price.text[1:5]) for price in prices_html])
-
+            for price in prices_html:
+                try:
+                    prices.append(float(price.text[1:5]))
+                except ValueError:
+                    prices.append(100000000)
+                    continue
         return pd.DataFrame({'names':names, 'adds':adds, 'price':prices})
 
     def get_price(self, address):
