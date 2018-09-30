@@ -45,5 +45,6 @@ dependencies:
     - beautifulsoup4==4.6.3
     - bs4==0.0.1
     - googlemaps==3.0.2
-prefix: C:\Users\jwu99\AppData\Local\Continuum\anaconda3\envs\Pyghack
+    - lxml==4.2.5
+prefix: D:\anaconda3\envs\Pyghack
 
