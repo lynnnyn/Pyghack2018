@@ -1,6 +1,7 @@
 import pandas as pd
 import googlemaps
 import sys
+import gasbuddy
 
 API_KEY = "AIzaSyCO6xWAy1F4WEAAArjT8qgEgFjZc77B7ds"
 
@@ -51,7 +52,7 @@ def get_gas_stations(northeast, southwest):
 	latitude_sw = southwest[0]
 	longitude_sw = southwest[1]
 
-	df = pd.read_csv("data/address_location.csv")	
+	df = pd.read_csv("../data/address_location.csv")	
 	out = list() 
 	for address, latitude, longitude in zip(df.iloc[:, 0], df.iloc[:, 1], df.iloc[:, 2]):
 		if latitude < latitude_ne and latitude > latitude_sw and longitude < longitude_ne and longitude > longitude_sw: 
@@ -61,16 +62,24 @@ def get_gas_stations(northeast, southwest):
 if __name__ == "__main__": 
 	input_origin = input("Enter your starting point: ")
 	input_destination = input("Enter your destination: ")
+	input_optimize = input("Optimize for cost or speed?")
+	input_fuel_type = input("Fuel Type: ")
+	input_remaining_gas = input("Remaining Gas Types: ")
 
 	gmaps = googlemaps.Client(key = API_KEY)
 
 	route = generate_route(gmaps, input_origin, input_destination)
 	northeast, southwest = get_lat_long_rect(route)
-	gas_stations = get_gas_stations(northeast, southwest)
-	if len(gas_stations) == 0: # Couldn't find any prospective gas stations 
+	waypoints = get_gas_stations(northeast, southwest)
+	if len(waypoints) == 0: # Couldn't find any prospective gas stations 
 		print("There are no gas stations between your start and end locations")
 		sys.exit(0)
-	else:
-		print(gas_stations)
-		# waypoint = gas_stations[0]
-		# print(generate_route(gmaps, input_origin, input_destination, waypoint))
+
+	# print(waypoints)
+	route_ranking = list() 
+	for waypoint in gas_stations: 
+		rt = generate_route(gmaps, input_origin, input_destination, waypoint)
+		# Pull price for waypoint using the zip code -> waiting for jianzhang 
+		# Calculate ranking -> waiting for terry/zhaowin
+		# Put it into the ranking list 
+	# Return the best ranking list 
