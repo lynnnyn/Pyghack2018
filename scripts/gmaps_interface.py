@@ -82,10 +82,23 @@ if __name__ == "__main__":
 	waypoints = get_gas_stations(northeast, southwest)
 	if len(waypoints) == 0: # Couldn't find any prospective gas stations 
 		print("There are no gas stations between your start and end locations")
-		# sys.exit(0)
+		sys.exit(0)
+
+	for waypoint in waypoints: 
+		address = waypoint[:-11]
+		gb = get_from_gasbuddy(address, input_fuel_type)
+		gb_df = gb.get_content()
+		print(gb_df["adds"])
+		print(address)
+
+		# names = gb_df["names"]
+		# addresses = gb_df["adds"]
+		# prices = gb_df["price"]
+
+
 
 	# Placeholder code to show calculations 
-	gb = get_from_gasbuddy(zip_code = 61801, fuel_type = 1)
+	""" 
 	waypoint, address, prices = gb.get_content() 
 
 	route_ranking = PriorityQueue()
@@ -105,7 +118,7 @@ if __name__ == "__main__":
 		for i in range(5): # This is arbitrary
 			ans.append(route_ranking.get())
 		print(min(ans, key = lambda x: x[1])[3])
-
+	"""
 	# print(route_ranking.get())
 
 
