@@ -1,0 +1,27 @@
+<html>
+
+
+    <head>
+        <title>Search result page</title>
+    </head>
+
+    <body id="bodyid">
+        <span id="embed" style="display:none;">{{ embed }}</span>
+        <!--<span id="endingpoint" style="display:none;">{{ endingpoint }}</span>-->
+        <!--<span id="remaininggas" style="display:none;">{{ remaininggas }}</span>-->
+        <!--<span id="prefer" style="display:none;">{{ prefer }}</span>-->
+        <!--<span id="type1" style="display:none;">{{ type1 }}</span>-->
+        {{ embed }}
+
+         <script>
+            a = document.getElementById("embed")
+            var notWorking = function(html) {
+            var el = document.createElement('iframe');
+            el.src = html;
+            var bodyFa = document.getElementById("bodyid");
+            bodyFa.appendChild(el);
+            }
+            document.write(notWorking(a))
+             </script>
+    </body>
+</html>
