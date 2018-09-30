@@ -26,8 +26,13 @@ def get_total_route_distance(route):
 	""" Returns the total route distance between in a route encoded in a json
 	
 	Assumes the JSON file follows Google Maps' route format 
+
+	Currently only works for single destination routes - need to extend it to waypoints 
 	"""
-	total_distance = route[0]["legs"][0]["distance"]["value"]
+	total_distance = 0
+
+	for i in range(len(route[0]["legs"])):
+		total_distance += route[0]["legs"][i]["distance"]["value"]
 	
 	return total_distance
 
@@ -63,68 +68,69 @@ def get_gas_stations(northeast, southwest):
 
 def calculate_gas_station_score(route, price, original_dist):
 	""" Calculates the score used to rank gas stations """ 
-	distance = route[0]["legs"][0]["distance"]["value"] + route[0]["legs"][1]["distance"]["value"]
+	distance = get_total_route_distance(route) 
 	diff = math.fabs(distance - original_dist)
 	return price - price * diff
+
+def calculate_optimal_gas_station(origin, destination, optimization_target, fuel_type, remaining_miles):
+	""" Generates all of the gas stations between origin and destination, ranks them, and determines which one is the best given our optimization target """ 
+	gmaps = googlemaps.Client(key = API_KEY)
+	direct_route = generate_route(gmaps, origin, destination)
+	direct_distance = get_total_route_distance(direct_route)
+	bounding_ne, bounding_sw = get_lat_long_rect(direct_route)
+	gas_stations = get_gas_stations(bounding_ne, bounding_sw)
+
+	# We couldn't find any prospective gas stations along the route 
+	if len(gas_stations) == 0:
+		print("There are no gas stations between your start and end locations")
+		sys.exit(0)
+
+	gb = get_from_gasbuddy(fuel_type)
+
+	station_ranking = PriorityQueue()
+
+	for station in gas_stations: # Go through each gas station and rank them 
+		station_address = station[:-11] # Try not to hard code this 
+		station_price = gb.get_price(station_address)
+
+		if station_price != set(): # Found the gas station and it sells the fuel type that we are looking for 
+			price = station_price.pop()
+			station_route = generate_route(gmaps, origin, destination, station_address)
+			if optimization_target.strip().lower() == "cost":
+				station_ranking.put((calculate_gas_station_score(station_route, price, direct_distance), price, station_address))
+			elif optimization_target.strip().lower() == "speed": 
+				print("!!")
+				station_ranking.put((get_total_route_distance(station_route), calculate_gas_station_score(station_route, price, direct_distance), price, station_address))
+
+	if optimization_target.strip().lower() == "cost":
+		return station_ranking.get()[2]
+	elif optimization_target.strip().lower() == "speed":
+		nearest = list() 
+		print("??")
+		for i in range(5): 
+			nearest.append(station_ranking.get())
+		return min(nearest, key = lambda x: x[1])[3]
+	else: 
+		print(optimization_target)
+		return "Optimization Target Wrong " # No optimization target 
+
+def get_embed_string(origin, destination, waypoint):
+	""" Returns the string used to embed a google maps visual in an iframe """
+	embed = "https://www.google.com/maps/embed/v1/directions?"
+	embed = embed + "key=" + API_KEY
+	embed = embed + "&origin=" + "+".join(origin.split())
+	embed = embed + "&destination=" + "+".join(destination.split())
+	embed = embed + "&waypoints=" + "+".join(waypoint.split())
+	return embed 
 
 if __name__ == "__main__": 
 	input_origin = input("Enter your starting point: ")
 	input_destination = input("Enter your destination: ")
 	input_optimize = input("Optimize for cost or speed? ")
 	input_fuel_type = input("Fuel Type: ")
-	input_remaining_gas = input("Remaining Miles before Empty Tank: ")
+	input_remaining_miles = input("Remaining Miles before Empty Tank: ")
 
-	gmaps = googlemaps.Client(key = API_KEY)
-
-	route = generate_route(gmaps, input_origin, input_destination)
-	distance = get_total_route_distance(route)
-	northeast, southwest = get_lat_long_rect(route)
-	waypoints = get_gas_stations(northeast, southwest)
-	if len(waypoints) == 0: # Couldn't find any prospective gas stations 
-		print("There are no gas stations between your start and end locations")
-		sys.exit(0)
-
-	for waypoint in waypoints: 
-		address = waypoint[:-11]
-		gb = get_from_gasbuddy(address, input_fuel_type)
-		gb_df = gb.get_content()
-		print(gb_df["adds"])
-		print(address)
-
-		# names = gb_df["names"]
-		# addresses = gb_df["adds"]
-		# prices = gb_df["price"]
-
-
-
-	# Placeholder code to show calculations 
-	""" 
-	waypoint, address, prices = gb.get_content() 
-
-	route_ranking = PriorityQueue()
-
-	if input_optimize == "cost": 
-		for i in range(len(waypoint)): 
-			# In the future, it would be good to consider the remaining amount of gas 
-			rt = generate_route(gmaps, input_origin, input_destination, waypoint[i])
-			route_ranking.put((calculate_gas_station_score(rt, prices[i], distance), prices[i], address[i]))
-		print(route_ranking.get()[2])
-
-	elif input_optimize == "speed": 
-		for i in range(len(waypoint)): 
-			rt = generate_route(gmaps, input_origin, input_destination, waypoint[i])
-			route_ranking.put((get_total_route_distance(rt), calculate_gas_station_score(rt, prices[i], distance), prices[i], address[i]))
-		ans = list()
-		for i in range(5): # This is arbitrary
-			ans.append(route_ranking.get())
-		print(min(ans, key = lambda x: x[1])[3])
-	"""
-	# print(route_ranking.get())
-
-
-	# for waypoint in gas_stations: 
-	# 	rt = generate_route(gmaps, input_origin, input_destination, waypoint)
-		# Pull price for waypoint using the zip code -> waiting for jianzhang 
-		# Calculate ranking -> waiting for terry/zhaowin
-		# Put it into the ranking list 
-	# Return the best ranking list 
+	optimal_gas_station = calculate_optimal_gas_station(input_origin, input_destination, input_optimize, input_fuel_type, input_remaining_miles)
+	print("Best Gas Station: ", optimal_gas_station)
+	embed = get_embed_string(input_origin, input_destination, optimal_gas_station)
+	print(embed)
