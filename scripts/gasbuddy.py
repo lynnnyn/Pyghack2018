@@ -5,9 +5,9 @@ import random
 
 class get_from_gasbuddy():
 
-    def __init__(self, address, fuel_type):
+    def __init__(self, fuel_type):
         self.fuel_type = fuel_type
-        self.address = address
+     #   self.address = address
 
 
     def get_html(self,page):
@@ -16,7 +16,8 @@ class get_from_gasbuddy():
         :param url: target url
         :return: html text file
         """
-        url = 'https://www.gasbuddy.com/home?search=urbana&fuel={}&cursor={}'.format(self.fuel_type,page)
+        add_on = 'cursor={}'
+        url = 'https://www.gasbuddy.com/home?search=urbana&fuel={}{}'.format(self.fuel_type, add_on+str(page))
 
         try:
             r = requests.get(url, timeout = 30)
@@ -29,7 +30,7 @@ class get_from_gasbuddy():
 
     def get_content(self):
 
-        pages = [10,20,30,40]
+        pages = ['',10,20,30,40]
         names = []
         adds = []
         prices = []
@@ -46,12 +47,12 @@ class get_from_gasbuddy():
 
         return pd.DataFrame({'names':names, 'adds':adds, 'price':prices})
 
-    def get_price(self):
+    def get_price(self, address):
         dt = self.get_content()
-        print(dt)
-        price = dt.loc[dt.adds == self.address, 'price']
-        print(price)
-        return price
+        #print(dt)
+        price = dt.loc[dt.adds == address, 'price']
+        #print(price)
+        return set(price)
 
 
 
@@ -62,11 +63,13 @@ if '__main__' == __name__:
     add_zip['address'] = [' '.join(dat['Address'].split(' ')[0:-2]) for ind, dat in data.iterrows()]
     add_zip['zipCode'] = [dat['Address'].split(' ')[-2] for ind, dat in data.iterrows()]
 
+#    print(add_zip)
     test = random.randint(0, add_zip.shape[0])
-    zip_code = add_zip.loc[test,'zipCode']
-    add = add_zip.loc[test, 'address']
+    zip_code = add_zip.loc[1,'zipCode']
+    add = add_zip.loc[1, 'address']
 
     print(add)
-    get = get_from_gasbuddy(address=add, fuel_type=1)
-    gb = get.get_content()
-    print(gb.loc[gb.adds == add,'price'])
+    get = get_from_gasbuddy(fuel_type=1)
+    gb = get.get_price(address=add)
+#    print(gb.loc[gb.adds == add,'price'])
+    print(gb)
