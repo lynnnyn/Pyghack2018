@@ -3,3 +3,5 @@ Our project tackles the Urbana Fleet Fuel Management problem, which tries to fin
 
 We visualized some of the insights we gained from the dataset on Tableau: 
 https://public.tableau.com/shared/Y477CXTK5?:display_count=yes
+
+Powerpoint slides discussing our results can be found in Deliverable.pptx
