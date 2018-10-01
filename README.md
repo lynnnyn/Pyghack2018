@@ -4,7 +4,7 @@ Our project tackles the Urbana Fleet Fuel Management problem, which tries to fin
 The dynamic route recommendation system can be found at: https://lynnnyn.pythonanywhere.com
 
 We visualized some of the insights we gained from the dataset on Tableau: 
-https://public.tableau.com/shared/Y477CXTK5?:display_count=yes
+https://public.tableau.com/views/FinalProduct/Story1?:embed=y&:display_count=yes&publish=yes
 
 Powerpoint slides discussing our results can be found in Deliverable.pdf
 
