@@ -1,0 +1,32 @@
+<html>
+
+    <head>
+        <title>Search result page</title>
+    </head>
+
+    <body id="bodyid">
+        <span id="embed" style="display:none;">{{ embed }}</span>
+        <!--{{ embed }}-->
+        <iframe
+          id = 'gg'
+    	  width="800"
+    	  height="650"
+    	  frameborder="0" style="border:0"
+    	  src="https://www.google.com/maps/embed/v1/directions?key=AIzaSyCO6xWAy1F4WEAAArjT8qgEgFjZc77B7ds&origin=carle+foundation+hospital&destination=60+hazelwood+drive+champaign+illinois&waypoints=810+W+Green+St,+Urbana,+IL" allowfullscreen>
+    	</iframe>
+
+         <script>
+            function escape2Html(str) {
+              var arrEntities={'lt':'<','gt':'>','nbsp':' ','amp':'&','quot':'"'};
+              return str.replace(/&(lt|gt|nbsp|amp|quot);/ig,function(all,t){
+                return arrEntities[t];
+              });
+            }
+
+            a = document.getElementById("embed").innerHTML
+
+            document.getElementById("gg").src = escape2Html(a)
+
+             </script>
+    </body>
+</html>
