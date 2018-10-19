@@ -13,6 +13,21 @@ We visualized some of the insights we gained from the dataset on Tableau:
 https://public.tableau.com/views/FinalProduct/Story1?:embed=y&:display_count=yes&publish=yes
 
 Powerpoint slides discussing our results can be found in Deliverable.pdf
+# About our website
+## Technology stack
+* Python 3.6
+* Flask
+* jQuery
+* ES6
+## Installation
+1. Get the code. Clone this git repository and check out the latest release:
+git clone https://github.com/lynnnyn/Pyghack2018.git
+cd Pyghack2018
+git checkout latest
+
+2. run flask_app.py
+
+3. website will run on http://0.0.0.0:5000
 
 # Setting up the environment 
 Run 
