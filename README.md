@@ -21,8 +21,11 @@ Powerpoint slides discussing our results can be found in Deliverable.pdf
 * ES6
 ## Installation
 1. Get the code. Clone this git repository and check out the latest release:
-git clone https://github.com/lynnnyn/Pyghack2018.git
+
+    git clone https://github.com/lynnnyn/Pyghack2018.git
+    
     cd Pyghack2018
+    
     git checkout latest
 
 2. run flask_app.py
